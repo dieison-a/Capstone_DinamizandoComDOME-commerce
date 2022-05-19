@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="listaProdutos.js"></script>
+    <script defer src="script.js"></script>
+    <title>Weartake</title>
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho">
+            <figure id="logo">
+                <img src="imgs/logoMarcaHeader.png" alt="Logo Marca Weartake">
+            </figure>
+            <nav class="menuHeader">
+                <ul class="menuTopo">
+                    <li><a id="Todos" href="#">Todos</a></li>
+                    <li><a id="Acessórios" href="#">Acessórios</a></li>
+                    <li><a id="Calçados" href="#">Calçados</a></li>
+                    <li><a id="Camisetas" href="#">Camisetas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="display">
+            <h5 class="semProduto">Desculpe!<br>Não temos mais este produto... :(</h5>
+            <!-- DISPLAY DA LISTA DE PRODUTOS -->
+        </div>
+        <aside class="lateral">
+            <form id="pesquisaProdutos">
+                <input id="pesquisaCategoria" type="text" placeholder="Pesquise por categorias">
+                <button id="botaoPesquisa">Pesquisar</button>
+            </form>
+            <section class="carrinhoCompras">
+                <p>Carrinho de compras</p>
+                <!-- Essa section aparecerá quando não tem itens -->
+                <section class="carrinhoVazio">
+                    <h5>Carrinho Vazio</h5>
+                    <p>Adicione itens ao carrinho</p>
+                </section>
+                <!-- Essa ul fica oculta quando não tem itens -->
+                <ul class="produtosCarrinho">
+                    <!-- LISTA DE PRODUTOS NO CARRINHO -->
+                </ul>
+                <!-- Essa section só aparecerá quando tem pelo menos 1 item -->
+                <section class="detalhesCompra">
+                    <p>Quantidade: <span id="quantosItens"></span></p>
+                    <p>Total: <span id="valorTotalCompra"></span></p>
+                </section>
+            </section>
+        </aside>
+    </main>
+    <footer>
+        <div class="rodape">
+            <span class="copyright">&copy; Dieison&rsquo;s Development,
+                <script>
+                    date = new Date().getFullYear()
+                    document.write(date)
+                </script>.
+            </span>
+        </div>
+    </footer>
+</body>
+
+</html>
